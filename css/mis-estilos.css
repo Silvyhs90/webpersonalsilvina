@@ -1,0 +1,51 @@
+html {
+    scroll-behavior: smooth;
+}
+.fondo{
+  background-image:        
+        url(../imagenes/fondo3.jpg);
+    background-repeat:round;
+    background-size:contain;
+    background-position:center;
+    background-attachment:fixed;
+    min-height:100vh;
+}
+
+.bg-dark{
+    background-color:#6A1A42!important;
+}
+
+.bg-light{
+    background-color:#E5549B!important;
+}
+
+.bg-danger{
+    background-color:#E37D7D!important;
+}
+
+.avatar{
+    align-content:center;
+    margin:30px;
+   
+}
+
+.titulo{
+    
+    margin: 60px;
+    text-align: center;
+   font-family: 'Merriweather', serif;
+}
+
+.cuerpo{
+    
+    font-family: 'Playfair Display', serif;
+}
+
+.barra{
+   font-family: 'Signika', sans-serif;
+}
+
+
+.bg-secondary{
+    background-color:#E8D9F2!important;
+}
