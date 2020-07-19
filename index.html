@@ -546,72 +546,10 @@
                 <?php
 
 
-if(isset($_POST["submit"]))
-{
-if(empty($_POST["nombre"]))
-{
-    $errores[]= "El nombre es requerido";
-}
-if(empty($_POST["apellido"]))
-{
-    $errores[] = "El apellido es requerido";
-}
-if(!filter_var($_POST["edad"], FILTER_VALIDATE_INT) || empty($_POST["edad"]))
-{
-    $errores[] = "Debe ingresar un número > 18 ";
-}
-if(!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL) || empty($_POST["email"]))
-{
-    $errores[] = "No se ha indicado email o el formato no es correcto";
-}
-if(empty($_POST["ciudad"]))
-{
-    $errores[] = "No se ha indicado sitio web o el formato no es correcto";
-}
-if(empty($_POST["provincia"]))
-{
-    $errores[] = "No se ha indicado sitio web o el formato no es correcto";
-}
-if(!filter_var($_POST["codigo"], FILTER_VALIDATE_INT) || empty($_POST["codigo"]))
-{
-    $errores[] = "Debe ingresar un número ";
-}
 
 
-if(empty($errores)) 
-{
-    $nombre = filtrado($_POST["nombre"]);
-    $apellido = filtrado($_POST["apellido"]);
-    $edad = filtrado($_POST["edad"]);
-    $email = filtrado($_POST["email"]);
-    $ciudad = filtrado($_POST["ciudad"]);
-    $provincia = filtrado($_POST["provincia"]);
-    $codigo = filtrado($_POST["codigo"]);
-?>
 
-</div>
-
-<h2 class="font-weight-bold bg-danger container mt-3"> Formulario Enviado. Nos pondremos en contacto brevemente </h2>
-
-<div class="container ml-2 text-light">
-<?php
-
-}
-
-else
-{
-    if(isset($errores))
-    {
-        foreach ($errores as $error)
-        {
-            echo "<li> $error </li>";
-        }
-    }
-
-}
-}
-?>
-</div>                
+             
                 
 
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
