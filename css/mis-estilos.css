@@ -11,6 +11,12 @@ html {
     min-height:100vh;
 }
 
+.columns{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
 .bg-dark{
     background-color:#6A1A42!important;
 }
@@ -49,3 +55,4 @@ html {
 .bg-secondary{
     background-color:#E8D9F2!important;
 }
+
