@@ -4,7 +4,7 @@ if (isset($_POST['submit'])){
     //error_reporting( E_ALL ); # REMOVE // FOR DEBUG
     $from = "UNCORREO@TUDOMINIO.COM"; // Email con el dominio del Hosting para evitar SPAM
     $fromName = "RPF-WEB"; // Nombre que saldrá en el email recibido
-    $to = "DESTINO@DOMINIO.COM"; // Dirección donde se enviará el formulario
+    $to = "silvina.saucedo90@gmail.com"; // Dirección donde se enviará el formulario
     $subject = $_POST['validarAsunto']; // Asunto del Formulario
 
     /* Componemos el mensaje */
